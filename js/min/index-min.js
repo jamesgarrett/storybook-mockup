@@ -1,0 +1,1 @@
+$(".logo").click(function(l){$(l).toggleClass("clicked"),$(".right").toggleClass("clicked")});

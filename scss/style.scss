@@ -1,0 +1,305 @@
+// Structure / Layout
+
+.wrap{
+  background: white; /* fallback for old browsers */
+  height:100vh;
+  width:100%;
+  .right{
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    background-color: lightseagreen;
+  }
+}
+
+.background{
+  width: 75%;
+  height: 80%;
+  left: 12.5%;
+  top: 10%;
+  position: fixed;
+  background-color: rgba(255,255,255,0.2);
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+  box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+  .left, .right{
+    width:100%;
+    height:200%;
+    top:-50%;
+    position:absolute;
+    overflow:hidden;
+    transition: 1s ease-in-out;
+  }
+  .left{
+    background-color: lightseagreen;
+    transform-origin: center;
+    transition: 1s ease-in-out;
+  }
+  .right{
+    background-color: white;
+    right:-50%;
+    transform-origin: left;
+    animation:fadein 2s;
+  }
+  .clicked.right{
+    transform: rotate(180deg);
+  }
+  .iphone{
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-49%) translateY(-48%);
+  }
+  .logo{
+    position: absolute;
+    top: 2.5%;
+    left: 3%;
+    height: 75px;
+    z-index: 5;
+  }
+}
+
+@keyframes fadein {
+    from {right: 0%;}
+    to {right: -50%;}
+}
+
+.app{
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:
+    translateX(-50%)
+    translateY(-50%);
+  background:url(img/ocean-green-2.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:333.5px;
+  width:187.5px;
+  margin:0 auto;
+  overflow-y:scroll;
+  -webkit-box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+  box-shadow: 0px 10px 4px 5px rgba(0,0,0,0.21);
+}
+
+// Utilities
+
+.spacer{
+  margin-top:240px;
+}
+
+.hidden{
+   visibility:hidden;
+}
+
+// Elements
+
+.status{
+  img{
+    position: fixed;
+    top: 3px;
+    width: 185px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 6px;
+    height: 6px;
+    background: transparent;
+    z-index: 9999;
+  }
+}
+
+.flash-button{
+  position:absolute;
+  right:-106.25px;
+  bottom:2.5px;
+  width:27.5px;
+  .white{fill:#fff;transition:1s ease-in-out;}
+  .yellow{fill:transparent;transition:1s ease-in-out;}
+  
+}
+  .flash-button.clicked{
+    .yellow{fill:#fffc00;transition:1s ease-in-out;}
+    .white{fill:transparent;transition:1s ease-in-out;}
+    transition:1s ease-in-out;
+  }
+
+.flash-button.disabled, .selfie.disabled{
+  visibility:hidden;
+}
+
+.selfie{
+  position:absolute;
+  left:-70px;
+  bottom:2.5px;
+  width:17.5px;
+  transition:1s ease-in-out;
+  transform:rotate(0deg);
+}
+
+.selfie.clicked{
+  transform:rotate(-180deg);
+  transition:1s ease-in-out;
+  .cls-1{
+    fill:#fffc00;
+  }
+}
+
+.camera{
+  position:absolute;
+  bottom:32.5px;
+  height:32.5px;
+  left:50%;
+  transform:translateX(-50%);
+  transition:1s ease-in-out;
+  cursor:pointer;
+  .camera-button{
+    width:32.5px;
+  }
+}
+
+.plane{
+  visibility:hidden;
+}
+
+.clicked{
+  .plane{
+    visibility:visible;
+  }
+}
+
+.ring, .plane{
+  fill:#fff;
+}
+
+ul.stories{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  position:absolute;
+  bottom:0px;
+  transition:1s ease-in-out;
+  li{
+    position:absolute;
+    width:22.5px;
+    bottom:32.5px;
+    transition:1s ease-in-out;
+  }
+  li#one{transform:translateX(-30px) translateY(30px);}
+  li#two{transform:translateX(-20px) translateY(6px);}
+  li#three{transform: translateX(5px) translateY(-7.5px);}
+  li#four{transform:translateX(30px) translateY(6px);}
+  li#five{transform:translateX(40px) translateY(30px);}
+}
+
+ul.more{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  position:absolute;
+  bottom:-165px;
+  display:-webkit-box;
+  float:left;
+  width:187.5px;
+  overflow-x:scroll;
+  padding-left:10px;
+  transition:1s ease-in-out;
+  display:-webkit-box;
+  li{
+    width:32.5px;
+    margin:15px 5px;
+    text-align: center;
+    img{
+      width:45px;
+    }
+    p{
+      font-size:12px;
+      color:white;
+      font-weight:bold;
+      margin-top:5px;
+    }
+  }
+}
+
+// Animation
+
+.new-story{
+  position:static;
+  float:right;
+  width: 20px;
+  margin: 15px 5px;
+  transition:1s ease-in-out;
+}
+
+.top-5{
+  position:static;
+  float:left;
+  width: 20px;
+  margin: 15px 5px;
+  transition:1s ease-in-out;
+}
+
+.camera.disabled{
+  transition:1s ease-in-out;
+  bottom:91.5px;
+}
+
+.stories.disabled{
+  transition:1s ease-in-out;
+}
+
+.more.disabled{
+  bottom:0px;
+  transition:1s ease-in-out;
+  display:-webkit-box;
+}
+
+.app.disabled{
+   background:url(img/blur-ocean-green-3.png);
+    background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  transition:1s ease-in-out;
+}
+
+.pop-out.item1 > .story-cover{
+      transform: translateY(37.5px)
+      translateX(-50px);
+  }
+    .pop-out.item2 > .story-cover{
+      transform: 
+        translateX(-67.5px)
+        translateY(137.5px);
+  }
+  .pop-out.item3 > .story-cover{
+      transform: 
+        translateX(75px)
+        translateY(225px);
+  }
+  .pop-out.item4 > .story-cover{
+      transform: 
+        translateX(67.5px)
+        translateY(137.5px);
+  }
+  .pop-out.item5 > .story-cover{
+      transform: 
+        translateY(37.5px)
+        translateX(50px);
+  }
+
+.camera.clicked .stories{
+  li{
+    transition:1s ease-in-out;
+  }
+  li#one{transform:translateX(-70px) translateY(-30px);}
+  li#two{transform:translateX(-70px) translateY(-140px);}
+  li#three{transform: translateX(-70px) translateY(-230px);}
+  li#four{transform:translateX(80px) translateY(-140px);}
+  li#five{transform:translateX(80px) translateY(-30px);}
+}
+
