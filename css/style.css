@@ -63,7 +63,7 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/770488/ocean-green-2.png);
+  background: url(img/ocean-green-2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +225,7 @@ ul.more {
   display: -webkit-box; }
 
 .app.disabled {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/770488/blur-ocean-green-3.png);
+  background: url(img/blur-ocean-green-3.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
