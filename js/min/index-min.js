@@ -1,1 +1,1 @@
-$(".logo").click(function(l){$(l).toggleClass("clicked"),$(".right").toggleClass("clicked")});
+var counter=0;$(".logo").click(function(c){counter+=1,$(c).toggleClass("clicked"),$(".right").toggleClass("clicked"),console.log(counter)});
