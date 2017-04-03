@@ -92,7 +92,7 @@
   vertical-align: middle;
   height: 250px;
   padding: 0 25px;
-  width: 35%;
+  width: 50%;
   h2{
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
@@ -107,17 +107,33 @@
 .content-left{
   text-align: left;
   color:white;
+  padding-right:130px;
 }
 
 .content-right{
   text-align: right;
-  color:lightseagreen;
-  right:50%;
-  animation:fadein 5s;
+  color: lightseagreen;
+  right: 0;
+  animation: fadein 1s;
+  padding-left: 130px;
 }
 
-#four, #five{
-  display:none;
+.content-left.alternate{
+  color: lightseagreen;
+}
+
+.content-right.alternate{
+  color:white;
+}
+
+img.demo {
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    width: 195px;
 }
 
 // Animation
