@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/blur-ocean-green-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 553394,
+		"inputAbbreviatedPath": "\/img\/blur-ocean-green-3.png",
+		"outputAbbreviatedPath": "\/img\/blur-ocean-green-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/iPhone.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -29,6 +40,17 @@
 		"initialSize": 26331,
 		"inputAbbreviatedPath": "\/img\/logo.png",
 		"outputAbbreviatedPath": "\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ocean-green-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.66337e+06,
+		"inputAbbreviatedPath": "\/img\/ocean-green-2.png",
+		"outputAbbreviatedPath": "\/img\/ocean-green-2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
